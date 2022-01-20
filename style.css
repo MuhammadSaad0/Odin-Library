@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: blue;
+    text-align: center;
+    font-size: larger;
+    color:white;
+    height: 2.5em;
+    padding:10px;
+}
+header h2{
+    margin: 0;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
