@@ -8,19 +8,18 @@ function Book(title, author, pages, read) {
         return title + " " + author + " " + pages + " " + read;
     }
 }
-
-function displaybooks() {
-    myLibrary.forEach(function (elem) {
-        console.table(elem);
-    });
-
-}
 function appendCardDiv(title, author, pages, read) {
     let div = document.getElementById("cards");
     let newcard = document.createElement("div");
     newcard.innerHTML = title + "<br><br>" + author + "<br><br>" + pages + "<br><br>" + read;
     newcard.classList.add("card");
     div.appendChild(newcard);
+}
+function clearInputForms() {
+    document.getElementById("title").value = "";
+    document.getElementById("author").value = "";
+    document.getElementById("pages").value = "";
+    document.querySelector("input[name = readstatus]:checked").checked = false;
 }
 function addBookToLibrary() {
     let title = document.getElementById("title").value;
@@ -31,8 +30,8 @@ function addBookToLibrary() {
     myLibrary.push(newbook);
     document.getElementById("addingform").style.visibility = "hidden";
     document.getElementById("add").style.visibility = "visible";
-    displaybooks();
     appendCardDiv(title, author, pages, read);
+    clearInputForms();
 }
 function displayform() {
     document.getElementById("addingform").style.visibility = "visible";
