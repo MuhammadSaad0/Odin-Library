@@ -15,6 +15,13 @@ function displaybooks() {
     });
 
 }
+function appendCardDiv(title, author, pages, read) {
+    let div = document.getElementById("cards");
+    let newcard = document.createElement("div");
+    newcard.innerHTML = title + "<br><br>" + author + "<br><br>" + pages + "<br><br>" + read;
+    newcard.classList.add("card");
+    div.appendChild(newcard);
+}
 function addBookToLibrary() {
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
@@ -25,6 +32,7 @@ function addBookToLibrary() {
     document.getElementById("addingform").style.visibility = "hidden";
     document.getElementById("add").style.visibility = "visible";
     displaybooks();
+    appendCardDiv(title, author, pages, read);
 }
 function displayform() {
     document.getElementById("addingform").style.visibility = "visible";

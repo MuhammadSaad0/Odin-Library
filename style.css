@@ -30,6 +30,12 @@ header h2{
     border-color: black;
     border-top:0;
     border-left: 0;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+#cards, div{
+    display: inline-block;
 }
 #add{
     font-size: larger;
@@ -42,7 +48,8 @@ header h2{
 #addingform{
     display: flex;
     flex-direction: column;
-    gap:0.5em;
+    justify-content: space-between;
+    gap:2vh;
     margin-top:4em;
     visibility: hidden;
 
@@ -61,8 +68,19 @@ label{
     margin-top: 15px;
 }
 #addingdone{
+    max-width: 50%;
     width: 15vh;
     margin-left: 30%;
     margin-top: 15%;
+}
+.card{
+    width:25%;
+    height:40%;
+    font-size: 24px;
+    padding:1em;
+    margin-left:0.5em;
+    margin-top:0.5em;
+    text-align: center;
+    border-style: solid;
 }
 
