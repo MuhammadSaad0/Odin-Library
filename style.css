@@ -24,7 +24,8 @@ header{
     grid-template-columns: 1fr 3fr;
 }
 #addingbar{
-
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,244,249,1) 97%, rgba(228,251,255,1) 100%);
     height: 80vh;
     border-style: solid;
     border-color: black;
@@ -75,6 +76,7 @@ header{
     gap:2vh;
     margin-top:4em;
     visibility: hidden;
+    padding: 1em;
     animation: fade 1.35s;
 
 }
@@ -83,10 +85,24 @@ header{
     80%{opacity:0;}
     100%{opacity:1;}
 }
+input{
+    border-width: 2px;
+    border-top-style: dotted;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Cascadia Code";
+    font-size:18px;
+}
+input:hover{
+    transform: scale(1.05);
+}
 #radios{
     display: block;
 }
+#radios:hover{
+    transform: scale(1.05);
+}
 label{
+    font-family: "Cascadia Code";
     font-size: larger;
     margin-left: 5px;
     font-weight: 900;
@@ -100,7 +116,23 @@ label{
     max-width: 50%;
     width: 15vh;
     margin-left: 30%;
-    margin-top: 8%;
+    margin-top: 3%;
+    font-size: larger;
+    align-items: center;
+    background: #f5f5fa;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code";
+    line-height: 1.5rem;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+#addingdone:hover{
+    transform: scale(1.1);
 }
 .card{
     width:25%;
