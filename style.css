@@ -8,10 +8,15 @@ header{
     font-size: larger;
     color:white;
     height: 2.5em;
-    padding:10px;
+    padding: 10px;
+    padding-bottom: 25px;
 }
-header h2{
-    margin: 0;
+#logo{
+    display: inline-block;
+    justify-content: space-between;
+    width: 100px;
+    height: auto;
+    margin-top: -1em;
 }
 #container{
     display: grid;
@@ -71,7 +76,7 @@ label{
     max-width: 50%;
     width: 15vh;
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 8%;
 }
 .card{
     width:25%;
@@ -83,4 +88,11 @@ label{
     text-align: center;
     border-style: solid;
 }
-
+#remove{
+    display: block;
+    border-radius: 10%;
+    width:30px;
+    height:30px;
+    margin-left: auto;
+    background-color:Red;
+}
