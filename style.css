@@ -40,8 +40,7 @@ header{
     display: flex;
     overflow-x: scroll;
     overflow-y: auto;
-    background: linear-gradient(49deg, rgba(255,255,255,1) 61%, rgba(145,164,218,1) 84%, rgba(12,109,250,1) 100%);
-
+    background-color: black;
 }
 #cards, div{
     display: inline-block;
@@ -82,10 +81,18 @@ header{
     animation: fade 1.35s;
 
 }
+#cards div{
+    animation: Animation 2s ease infinite;
+}
 @keyframes fade{
     0%{opacity: 0;}
     80%{opacity:0;}
     100%{opacity:1;}
+}
+@keyframes Animation { 
+    0%{opacity: 0.9;}
+    50%{opacity: 1;}
+    100%{opacity:0.9;}
 }
 input{
     border-width: 2px;
@@ -163,10 +170,9 @@ label{
     background-color:Red;
 }
 #titlei{
-    font-size: 130%;
-    overflow-y: hidden;
-    overflow-x:hidden;
-    white-space: nowrap;
+    font-size: 125%;
+    max-height: 35%;
+    overflow-y:hidden;
     max-width: 95%;
 }
 #hr1{
@@ -186,7 +192,7 @@ label{
     overflow-y: hidden;
     font-size: 12px;
     line-height: 1em;
-    margin-top: 15%;
+    margin-top: 5%;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-decoration: underline gold;
