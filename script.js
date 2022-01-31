@@ -15,7 +15,7 @@ function appendCardDiv() {
     let newcard = document.createElement("div");
     let i = 0;
     for (i; i < myLibrary.length; i++) {
-        newcard.innerHTML = myLibrary[i].title + "<br><br>" + myLibrary[i].author + "<br><br>" + myLibrary[i].pages + "<br><br>" + myLibrary[i].read;
+        newcard.innerHTML = "<div id = 'titlei'>" + myLibrary[i].title + "</div><hr id = 'hr1'><div id = 'authori'>By " + myLibrary[i].author + "</div><br><br>" + myLibrary[i].read + "<br><br><div id = 'pagesi'> Pages: " + myLibrary[i].pages + "</div>";
         newcard.classList.add("card");
         div.appendChild(newcard);
     }

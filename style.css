@@ -40,6 +40,8 @@ header{
     display: flex;
     overflow-x: scroll;
     overflow-y: auto;
+    background: linear-gradient(49deg, rgba(255,255,255,1) 61%, rgba(145,164,218,1) 84%, rgba(12,109,250,1) 100%);
+
 }
 #cards, div{
     display: inline-block;
@@ -135,14 +137,22 @@ label{
     transform: scale(1.1);
 }
 .card{
-    width:25%;
+    width:20%;
     height:40%;
     font-size: 24px;
     padding:1em;
-    margin-left:0.5em;
-    margin-top:0.5em;
+    margin-left:1.5em;
+    margin-top:1em;
     text-align: center;
     border-style: solid;
+    border-color:black;
+    background-color: #4169e1;
+    font-family: "Cascadia Code";
+    color: #fff;
+    box-shadow:4px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:8px 0px 5px 0px rgba(0, 0, 131, 0.75);
+    outline: transparent;
+    position: relative;
 }
 #remove{
     display: block;
@@ -151,4 +161,33 @@ label{
     height:30px;
     margin-left: auto;
     background-color:Red;
+}
+#titlei{
+    font-size: 130%;
+    overflow-y: hidden;
+    overflow-x:hidden;
+    white-space: nowrap;
+    max-width: 95%;
+}
+#hr1{
+    background-color:gold;
+}
+#authori{
+    font-size: 16px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    max-height: 1.2em;
+    max-width: 80%;
+    text-overflow: ellipsis;
+}
+#pagesi{
+    max-width:50%;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    font-size: 12px;
+    line-height: 1em;
+    margin-top: 15%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: underline gold;
 }
